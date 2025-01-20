@@ -263,11 +263,11 @@
       .banner-text button {
         margin: auto;
       }
-      /* */
+      /* card par*/
       .cards{
         flex-direction: column;
         margin: 4rem 3rem;
-        justify-content: ;
+        justify-content: center;
       }
 
 
