@@ -89,6 +89,7 @@
   
 .contact-btn:hover {
     background-color: darkorange;
+    transform: scale(1.05);
 }
 
   .toggle-bar {
@@ -117,6 +118,12 @@
   }
   .banner-text button {
     background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .banner-text button:hover{
+    background-color: rgba(163, 89, 15, 0.42);
+    transform: scale(1.05);
   }
   h1 span:nth-child(1) {
     color: var(--orange);
@@ -125,11 +132,94 @@
     color: var(--blue);
   }
 
+  /* standard-curriculum */
+
+  .standard-curriculum{
+    background-image: url(../assets/bg.png);
+    margin: 1rem;
+  }
+  .standard-curriculum h1{
+    text-align: center;
+    color: #000000;
+    font-size: 2.875rem;
+    font-weight: 700;
+  }
+  .cards{
+    justify-content: center;
+    align-content: center;
+    gap:2rem;
+    margin: 5rem auto;
+  }
+  .card{
+    max-width: 23rem;
+    height: 30rem;
+    padding: 3.8rem 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32.069px;
+    flex-shrink: 0;
+    border-radius: 18.864px;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .card:nth-child(1){
+    border: 0.943px solid #def5ff;
+    background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+      #fff;
+  }
+
+  .card:nth-child(2){
+    border: 0.943px solid #fff4dc;
+    background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+      #fff;
+  }
+  .card:nth-child(3){
+    border: 0.943px solid #f2e8ff;
+    background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  }
+  .read-more{
+    margin-top: 2.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .card:nth-of-type(1) .read-more {
+    color: var(--blue);
+  }
+  .card:nth-of-type(2) .read-more {
+    color: var(--orange);
+  }
+  .card:nth-of-type(3) .read-more {
+    color: var(--violet);
+  }
+  .sliders {
+    display: flex;
+    justify-content: center;
+  }
+  .left-arrow,
+  .right-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background: var(--orange);
+    border: none;
+    margin: 0 0.3rem;
+  }
 /* mobile responsive */
 @media screen and (max-width: 576px) {
     .nav-links,
     .contact-btn,
-    .logo > h1 {
+    .logo > h1 ,
+    .sliders{
       display: none;
     }
     .logo-img img {
@@ -173,4 +263,12 @@
       .banner-text button {
         margin: auto;
       }
+      /* */
+      .cards{
+        flex-direction: column;
+        margin: 4rem 3rem;
+        justify-content: ;
+      }
+
+
     }
