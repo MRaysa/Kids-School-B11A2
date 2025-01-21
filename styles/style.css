@@ -379,7 +379,7 @@ footer{
 @media screen and (max-width: 576px) {
     .nav-links,
     .contact-btn,
-    .logo > h1 ,
+    .logo > h2,
     .sliders,
     .stories1{
       display: none;
