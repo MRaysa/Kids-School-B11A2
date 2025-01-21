@@ -500,3 +500,107 @@ footer{
         margin: 2rem 0;
       }
     }
+
+    /* optional part */
+    
+  /* medium size device */
+  
+  @media screen and (min-width:576px) and (max-width:992px){
+    .nav-links,
+    .contact-btn,
+    .logo > h2,
+    .sliders,
+    .stories1{
+      display: none;
+    }
+    .logo-img img {
+      height: 47px;
+      width: 47px;
+    }
+    nav {
+      margin: 0;
+      padding: 1rem;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--orange); 
+    }
+    .toggle-bar {
+      display: block;
+      font-size: 2rem;
+    }
+
+    /* start banner part */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem auto;
+      }
+    
+      .banner img {
+        order: -1;
+        max-width: 80%;
+      }
+      .banner-text {
+        text-align: center;
+        margin: 1.5rem auto;
+        max-width: 22rem;
+      }
+      .banner-text h1 {
+        font-size: 2rem;
+      }
+      .banner-text p {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .banner-text button {
+        margin: auto;
+      }
+      /* card part*/
+      
+      .cards{
+        flex-direction: column;
+        margin: 4rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      /*our stories part */
+      .stories-container{
+        margin:2rem auto;
+      }
+      .stories-grid-container {
+        grid-template-columns: repeat(2, 42%);
+        gap: 1rem;
+      }
+      .stories-box h1 {
+        font-size: 0.6rem;
+        padding: 1.2rem;
+      }
+      .date {
+        font-size: 0.5rem;
+        padding: 0.4rem;
+      }
+
+      /*footer part */
+      footer {
+        flex-direction: column;
+        padding: 4rem 1rem;
+      }
+      footer h1 {
+        font-size: 2rem;
+      }
+      .footer-logo{
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: start;
+      }
+      .logo-with-text p{
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .about-school{
+        margin: 2rem 0;
+      }
+  }
