@@ -555,7 +555,10 @@ footer{
         margin: auto;
       }
       /* card part*/
-      
+      .standard-curriculum > h1{
+        font-weight: bold;
+        font-size: 1.7rem;
+      }
       .cards{
         flex-direction: column;
         margin: 4rem 3rem;
