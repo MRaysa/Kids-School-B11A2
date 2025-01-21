@@ -72,6 +72,7 @@
     color:#fea301; 
   }
 
+  /* navbar part */
 
   nav {
     margin: 1.75rem auto;
@@ -82,17 +83,30 @@
   .logo {
     align-items: center;
   }
-  li > a,
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around; 
+    gap: 1.5rem;
+    padding: 0;
+  }
+
   li {
-    text-decoration: none;
     list-style: none;
-    margin: 0 2rem;
-    font-size: 1.25rem;
-    font-style: normal;
+  }
+  li > a {
+    text-decoration: none;
+    font-size: 1.15rem; 
     font-weight: 500;
     line-height: 30px;
-    color: var(--orange);
+   
   }
+  
   ul li:nth-child(1) a {
     color: var(--orange);
   }
@@ -129,6 +143,8 @@
 .banner {
     justify-content: space-around;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .banner-text {
     max-width: 40rem;
