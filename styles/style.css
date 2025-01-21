@@ -387,7 +387,13 @@ footer{
   align-items: start;
   justify-content: start;
 }
-
+.about-school-all-nav{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  
+}
 .social-media {
   margin-top: 1rem;
   display: flex;
