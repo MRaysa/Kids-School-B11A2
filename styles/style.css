@@ -127,7 +127,7 @@
 
 /* start banner part */
 .banner {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .banner-text {
