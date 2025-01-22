@@ -428,7 +428,17 @@ footer{
   gap: 1rem;
   justify-content: start;
 }
+.social-media img {
+  width: 40px; 
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
 
+.social-media img:hover {
+  transform: scale(1.2); 
+  filter: brightness(1.2); 
+  cursor: pointer;
+}
 
 
 
@@ -531,6 +541,9 @@ footer{
       }
       .about-school{
         margin: 2rem 0;
+      }
+      .social-media img{
+        margin-bottom: 3.75rem;
       }
     }
 
@@ -638,5 +651,8 @@ footer{
       }
       .about-school{
         margin: 2rem 0;
+      }
+      .social-media img{
+        margin-bottom: 3.75rem;
       }
   }
